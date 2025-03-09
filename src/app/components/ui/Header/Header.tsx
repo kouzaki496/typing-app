@@ -5,7 +5,7 @@ import { useAuth } from '@/app/hooks/useAuth';
 const Header = () => {
   const { signIn, signOut } = useAuth();
   return (
-    <header className="bg-primary text-white p-4">
+    <header className="bg-secondary text-primary p-4">
       <div className="container mx-auto flex justify-between items-center">
         <h1>My Application</h1>
         <Button onClick={signIn}>Googleでログイン</Button>
