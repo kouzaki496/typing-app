@@ -1,7 +1,5 @@
 "use client";
 
-import { Button } from "@/app/components/ui/Button/button";
-import { signInWithGoogle } from "./services/authService";
 import Header from "./components/ui/Header/Header";
 
 
