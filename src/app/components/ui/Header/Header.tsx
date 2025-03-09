@@ -5,10 +5,12 @@ import { useAuth } from '@/app/hooks/useAuth';
 const Header = () => {
   const { signIn, signOut } = useAuth();
   return (
-    <header className="bg-gray-800 text-white p-4">
-      <div className="container mx-auto flex justify-between items-center"></div>
-      <Button onClick={signIn}>Googleでログイン</Button>
-      <Button onClick={signOut}>ログアウト</Button>
+    <header className="bg-primary text-white p-4">
+      <div className="container mx-auto flex justify-between items-center">
+        <h1>My Application</h1>
+        <Button onClick={signIn}>Googleでログイン</Button>
+        <Button onClick={signOut}>ログアウト</Button>
+      </div>
     </header>
   );
 };
