@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Button } from '@/app/components/ui/Button/button';
 import { useAuth } from '@/app/hooks/useAuth';
 import { Moon, Sun } from 'lucide-react';
@@ -7,14 +7,6 @@ import { useTheme } from 'next-themes';
 const Header = () => {
   const { theme, setTheme } = useTheme();
   const { signIn, signOut, user } = useAuth();
-
-  useEffect(() => {
-    // クライアントサイドでのみテーマを設定
-    if (typeof window !== 'undefined' && theme === 'system') {
-      setTheme(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    }
-  }, [theme, setTheme]);
-
 
   return (
     <header className="bg-secondary text-primary p-4">
