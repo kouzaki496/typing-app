@@ -4,7 +4,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "@/app/styles/globals.css";
 import { AuthProvider } from "./hooks/useAuth";
 import { ThemeProvider } from "./theme-provider";
-import { ThemeWatcher } from "./theme-watcher";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,7 +32,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <ThemeWatcher />
           <AuthProvider>
             {children}
           </AuthProvider>
