@@ -10,7 +10,7 @@ const Header = () => {
 
   useEffect(() => {
     // クライアントサイドでのみテーマを設定
-    if (theme === 'system') {
+    if (typeof window !== 'undefined' && theme === 'system') {
       setTheme(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     }
   }, [theme, setTheme]);
