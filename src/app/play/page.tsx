@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import PlayScreen from '../components/ui/PlayScreen/PlayScreen';
 

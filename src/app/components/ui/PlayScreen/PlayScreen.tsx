@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import TypingArea from '../TypingArea/TypingArea';
 import ExampleDisplay from '../ExampleDisplay/ExampleDisplay';
