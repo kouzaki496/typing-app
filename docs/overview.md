@@ -2,7 +2,7 @@
 
 ## アプリ名
 
-typing app
+TypingPracticeApp
 
 ## 目的
 

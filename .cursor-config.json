@@ -1,0 +1,91 @@
+{
+  "project": {
+    "name": "Typing-App",
+    "description": "A typing practice app for engineers, featuring customizable languages and difficulty levels.",
+    "url": "https://your-project-url.com",
+    "version": "1.0.0",
+    "maintainers": [
+      {
+        "name": "Your Name",
+        "email": "your.email@example.com",
+        "role": "Developer"
+      }
+    ]
+  },
+  "files": {
+    "include": [
+      "src/app/components/ui/**/*.tsx",
+      "src/app/hooks/**/*.ts",
+      "src/app/services/**/*.ts",
+      "src/app/styles/**/*.css",
+      "src/app/**/*.tsx",
+      "src/app/**/*.ts"
+    ],
+    "exclude": [
+      "node_modules/**/*",
+      "build/**/*",
+      ".next/**/*",
+      "out/**/*"
+    ]
+  },
+  "documentation": {
+    "type": "markdown",
+    "paths": [
+      "docs/README.md",
+      "docs/features.md",
+      "docs/specs/*.md",
+      "docs/roadmap.md",
+      "docs/data-model.md",
+      "docs/naming_conventions.md",
+      "docs/ui_design.md",
+      "docs/overview.md"
+    ],
+    "linting": {
+      "enabled": true,
+      "rules": {
+        "no-empty": "warn",
+        "no-unused-vars": "error",
+        "max-line-length": 120
+      }
+    }
+  },
+  "tasks": {
+    "build": {
+      "command": "next build",
+      "description": "Build the project for production"
+    },
+    "dev": {
+      "command": "next dev",
+      "description": "Run the development server"
+    },
+    "lint": {
+      "command": "eslint . --fix",
+      "description": "Lint the project files"
+    }
+  },
+  "plugins": [
+    {
+      "name": "eslint",
+      "enabled": true,
+      "config": ".eslintrc.json"
+    },
+    {
+      "name": "prettier",
+      "enabled": true,
+      "config": ".prettierrc"
+    }
+  ],
+  "git": {
+    "repository": "https://github.com/your-github/typing-practice-app",
+    "branch": "main"
+  },
+  "editor": {
+    "theme": "One Dark Pro",
+    "extensions": [
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "mhutchie.git-graph",
+      "yzhang.markdown-all-in-one"
+    ]
+  }
+}
