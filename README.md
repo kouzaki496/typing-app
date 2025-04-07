@@ -42,6 +42,8 @@ https://ui.shadcn.com/
 ├── overview.md # アプリの目的や概要
 ├── features.md # 機能と要件一覧
 ├── data-model.md # データ構造・DB 設計
-├── auth.md # 認証周りの仕様
+├── specs/\*.md # 機能仕様書
 ├── ui-design.md # 画面設計、画面遷移
 └── roadmap.md # 開発スケジュール・マイルストーン
+
+詳しい仕様については [`docs/specs/`](./docs) をご覧ください。
