@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
 import { basicSetup } from "@uiw/codemirror-extensions-basic-setup";
-import CodeMirror from "@uiw/react-codemirror";
 import { EditorView } from "@codemirror/view";
 import { oneDark } from "@codemirror/theme-one-dark";
 import { useCodeMirror } from "@uiw/react-codemirror";
