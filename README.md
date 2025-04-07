@@ -37,3 +37,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 https://typing-app-ruby.vercel.app/
 https://ui.shadcn.com/
+
+/docs
+├── overview.md # アプリの目的や概要
+├── features.md # 機能と要件一覧
+├── data-model.md # データ構造・DB 設計
+├── auth.md # 認証周りの仕様
+├── ui-design.md # 画面設計、画面遷移
+└── roadmap.md # 開発スケジュール・マイルストーン
